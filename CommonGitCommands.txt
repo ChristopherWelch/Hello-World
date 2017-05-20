@@ -1,0 +1,35 @@
+# This file is for the terminal commands that we use in Git.
+# names of variables (don't type them): <>
+
+Initialization: Creating a new repository (place where files are stored that git can see)
+git init <name of your project>
+
+Adds: adds a file that Git can see 
+git add .                                   #This adds everything in the current directory so Git can see it
+git add <name of file or directory>         #This adds just the file or directory so Git can see it
+
+Commits: Creates a "snapshot" of what you just created
+git commit -a -m "Put the name of the file and the reason you added it here"
+
+Checkout: Switches branches that you're working on
+git checkout <name of branch>
+git push [origin] <name of branch>
+git pull
+git merge <name of branch>
+
+Other common Git commands
+git log --graph --decorate --abbrev-commit --all --pretty=oneline
+git config --global user.name "Dana Devops"
+git config --global user.email "yourEmail@whatever.com"
+
+# shows the difference of files
+git diff
+
+#shows which words were changed
+git diff --color-words
+
+#shows how many words in the file were changed
+git diff --word-diff
+
+#just shows the files that have been changed
+git diff --stat    
